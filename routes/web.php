@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', 'CacaoController@index');
+Route::get('/', function () {
+    return view('content');
+});
+Route::get('/usuarios', 'CacaoController@index');
 Route::get('/calculos/{usuario}', 'CacaoController@calculos');
