@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'CacaoController@index');
+Route::get('/calculos/{usuario}', 'CacaoController@calculos');
